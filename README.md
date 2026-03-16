@@ -1,7 +1,5 @@
 # Lens Font Recognition Model
 
-<br>
-
 <p align="center">
     <img src="https://static.mixfont.com/assets/20260316-200114-mixfont-lens-banner-qlm9gt3n.webp" alt="Lens Font Recognition Model Banner" />
 <p>
@@ -40,6 +38,10 @@ Lens is a neural-net based font recognition and classification model. It has bee
 ### Introduction
 
 Lens is a powerful font recognition model built on top of Resnet18 to identify and classify fonts from images. It is designed to provide accurate font recognition results, making it a valuable tool for designers, typographers, and anyone interested in identifying fonts or the closest matching font in a given image.
+
+<p align="center">
+    <img src="https://static.mixfont.com/assets/20260316-214220-image-d5jb09dd.webp" alt="Example output from Lens Font Recognition" />
+<p>
 
 - **Trained only on open-source fonts**: Unlike other font recognition models that do a database lookup on proprietary fonts, Lens is trained on a large dataset of open-source fonts, including most Google Fonts families and other open source fonts. This allows users to freely use the recognized fonts in their projects without worrying about licensing issues.
 - **Handles multiple font weights and styles**: Lens is trained on a combination of font weights and styles which makes it more robust and accurate in recognizing fonts in various formats. Lens can still identify a specific font family even if the style is in italic or the font weight is extra bold.
