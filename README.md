@@ -107,11 +107,15 @@ Optional arguments:
 - `--top-k 5`
 - `--debug`
 
-Pass `--debug` to clear any existing files in `debug/` and write:
+By default, the script returns the top 3 font matches. You can change this with the `--top-k` flag.
+
+Pass `--debug` to write the intermediate images to disk for debugging purposes. The images will be written to the /debug directory with the following filenames:
 
 - `01_downloaded_image.png`
 - `02_word_detection_box.png`
 - `03_model_input_crop.png`
+
+You can see an example of these images in the repository. They will show what word was detected and passed to the model for font classification.
 
 ### Output
 
@@ -151,6 +155,8 @@ deployed app:
 
 If OCR cannot find a usable word, the script falls back to running inference on
 the original image and still returns predictions.
+
+By default, the model will hosted font files on the Mixfont CDN. If you want to run inference with your own local font files, you can modify the `font_metadata_mapper.py` file to point to your local font paths instead of the CDN URLs.
 
 ### Examples
 
