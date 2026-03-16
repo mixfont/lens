@@ -28,10 +28,7 @@ Lens is a neural-net based font recognition and classification model. It has bee
   - [Output](#output)
 - [Examples](#examples)
 - [Limitations](#limitations)
-- [License](#vllm-usage)
-- [Fine Tuning](#fine-tuning)
-- [Evaluation](#evaluation)
-- [Citation](#citation)
+- [License](#license)
 
 ## Overview
 
@@ -173,3 +170,18 @@ These screenshots are taken from the hosted playground on the [Mixfont website](
   <img src="https://static.mixfont.com/assets/20260316-215124-image-3a9qjjp1.webp" alt="Example 3">
   <figcaption>The model will try to find the closest font match out of an open-source font dataset.</figcaption>
 </figure>
+
+### Limitations
+
+The model will not perform as well on screenshots or images with a ton of different fonts. The model is trained to find the closest match for the largest word in an image, so if there are many different fonts in an image, the model may not be able to find a good match. The model is also trained on open-source fonts, so it may not be able to find a good match for proprietary fonts that are not in the training dataset.
+
+### License
+
+This project is provided for personal, academic, and non-commercial use only.
+
+You are free to use, copy, modify, and distribute this code, provided that:
+
+- You include proper attribution to the original author; and
+- You do not use this project or any derivative works for commercial purposes.
+
+Commercial use is strictly prohibited without written permission. For commercial licensing inquiries, please contact: hello@mixfont.com. You can also use the [commercial API](https://www.mixfont.com/docs) on the Mixfont website, which is powered by the same underlying model and inference pipeline as this open-source release.
