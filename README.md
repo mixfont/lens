@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-    <img src="https://static.mixfont.com/assets/20260316-200114-mixfont-lens-banner-qlm9gt3n.webp" width="400"/>
+    <img src="https://static.mixfont.com/assets/20260316-200114-mixfont-lens-banner-qlm9gt3n.webp" alt="Lens Font Recognition Model Banner" />
 <p>
 
 <p align="center">
