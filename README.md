@@ -156,3 +156,15 @@ If OCR cannot find a usable word, the script falls back to running inference on
 the original image and still returns predictions.
 
 ### Examples
+
+These screenshots are taken from the hosted playground on the [Mixfont website](https://www.mixfont.com/models/lens), which uses the same model and inference pipeline as this repo.
+
+<figure>
+  <img src="https://static.mixfont.com/assets/20260316-214702-image-plo7abev.webp" alt="Example 1">
+  <figcaption>Lens can recognize fonts with different colors on different backgrounds.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://static.mixfont.com/assets/20260316-214837-image-z7wtjy8o.webp" alt="Example 2">
+  <figcaption>The full inference stack will first detect the largest word in a given image and run font detection on that word.</figcaption>
+</figure>
