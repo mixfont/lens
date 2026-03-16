@@ -21,19 +21,16 @@ Lens is a neural-net based font recognition and classification model. It has bee
 
 - [Overview](#overview)
   - [Introduction](#introduction)
-  - [Model Architecture](#model-architecture)
   - [Released Models Description and Download](#released-models-description-and-download)
-- [Quickstart](#quickstart)
-  - [Environment Setup](#environment-setup)
-  - [Python Package Usage](#python-package-usage)
-    - [Custom Voice Generation](#custom-voice-generate)
-    - [Voice Design](#voice-design)
-    - [Voice Clone](#voice-clone)
-    - [Voice Design then Clone](#voice-design-then-clone)
-    - [Tokenizer Encode and Decode](#tokenizer-encode-and-decode)
-  - [Launch Local Web UI Demo](#launch-local-web-ui-demo)
-  - [DashScope API Usage](#dashscope-api-usage)
-- [vLLM Usage](#vllm-usage)
+- [Usage](#Usage)
+  - [Getting Started](#getting-started)
+  - [Files](#files)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Output](#output)
+- [Examples](#examples)
+- [Limitations](#limitations)
+- [License](#vllm-usage)
 - [Fine Tuning](#fine-tuning)
 - [Evaluation](#evaluation)
 - [Citation](#citation)
@@ -49,7 +46,13 @@ Lens is a powerful font recognition model built on top of Resnet18 to identify a
 - **Robustness with obscured text, background images, and more**: Lens is built to handle a wide variety of real-world scenarios, including images with obscured text, complex backgrounds, and varying distortion levels. This makes it a versatile tool for font recognition in diverse contexts.
 - **Handles images with multiple fonts**: The inference pipeline in Lens first identifies the largest word in the image using OCR, and then runs font recognition on that word. This allows it to handle images with multiple fonts, and still return accurate predictions for the most prominent font in the image.
 
-# Lens
+### Released Models Description and Download
+
+This repo contains the latest release of Lens, which was trained on open source fonts as of March 2026. The PyTorch model file can be found in `model/font_classifier.pt`. However the repository itself contains a full inference pipeline that includes OCR-based word detection and preprocessing steps to handle a variety of real-world image scenarios. Please see the [Usage](#usage) section below for instructions on how to run the full inference pipeline with the bundled model.
+
+## Usage
+
+### Getting Started
 
 This directory is a standalone open-source release of the Lens font recognition
 model and its local inference code.
@@ -59,12 +62,9 @@ It contains only the pieces required to:
 - download an image from a URL
 - run OCR to find the largest word
 - classify the word image with the bundled model
-- return the same JSON response shape as `lens_modal_app.py`
+- return the font matches in a JSON formatted response
 
-It does not include Modal deployment code, API server code, or web request
-handlers beyond downloading the input image URL for inference.
-
-## Files
+### Files
 
 - `run_inference.py`: CLI entrypoint
 - `lens_inference.py`: OCR + preprocessing + model inference pipeline
@@ -72,7 +72,7 @@ handlers beyond downloading the input image URL for inference.
 - `font_metadata_mapper.py`: maps predicted labels to font metadata entries
 - `model/`: bundled trained model artifacts from `2026-03-04_23-50-51`
 
-## Setup
+### Setup
 
 Install Tesseract OCR first.
 
@@ -97,7 +97,7 @@ source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
 
-## Usage
+### Usage
 
 ```bash
 python run_inference.py "https://example.com/image.png"
@@ -114,7 +114,7 @@ Pass `--debug` to clear any existing files in `debug/` and write:
 - `02_word_detection_box.png`
 - `03_model_input_crop.png`
 
-## Output
+### Output
 
 The script prints JSON to stdout with the same top-level keys returned by the
 deployed app:
@@ -152,3 +152,5 @@ deployed app:
 
 If OCR cannot find a usable word, the script falls back to running inference on
 the original image and still returns predictions.
+
+### Examples
