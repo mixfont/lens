@@ -9,11 +9,11 @@
 
 </p>
 
-Lens is a neural-net based font recognition and classification model. It has been specifically trained on open-source fonts. It recognizes the closest matching open-source font for the largest word in a provided image. Lens supports most [Google Fonts](https://fonts.google.com/) families, but also includes other open source fonts outside of the Google Fonts collection. In total is recognizes over 1000 different font families, and over 5000 font variants, including multiple weights and italic style combinations. This repo contains a standalone release of the Lens model and its local inference code. Enjoy!
+[Lens](https://www.mixfont.com/models/lens) is a neural-net based font recognition and classification model. It has been specifically trained on open-source fonts. It recognizes the closest matching open-source font for the largest word in a provided image. Lens supports most [Google Fonts](https://fonts.google.com/) families, but also includes other open source fonts outside of the Google Fonts collection. In total is recognizes over 1000 different font families, and over 5000 font variants, including multiple weights and italic style combinations. This repo contains a standalone release of the Lens model and its local inference code. Enjoy!
 
 ## News
 
-- 2026.3.16: 🎉🎉🎉 We have released [Lens](https://wwww.mixfont.com/models/lens) as an open-weight font recognition model!
+- 2026.3.16: 🎉🎉🎉 We have released [Lens](https://www.mixfont.com/models/lens) as an open-weight font recognition model!
 
 ## Contents <!-- omit in toc -->
 
