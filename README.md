@@ -168,3 +168,8 @@ These screenshots are taken from the hosted playground on the [Mixfont website](
   <img src="https://static.mixfont.com/assets/20260316-214837-image-z7wtjy8o.webp" alt="Example 2">
   <figcaption>The full inference stack will first detect the largest word in a given image and run font detection on that word.</figcaption>
 </figure>
+
+<figure>
+  <img src="https://static.mixfont.com/assets/20260316-215124-image-3a9qjjp1.webp" alt="Example 3">
+  <figcaption>The model will try to find the closest font match out of an open-source font dataset.</figcaption>
+</figure>
