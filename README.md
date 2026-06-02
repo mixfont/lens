@@ -1,7 +1,7 @@
-# Lens Font Recognition Model
+# Lens - Open-Source Font Recognition Model
 
 <p align="center">
-    <img src="https://static.mixfont.com/assets/20260316-200114-mixfont-lens-banner-qlm9gt3n.webp" alt="Lens Font Recognition Model Banner" />
+    <img src="https://static.mixfont.com/assets/20260602-231020-mixfont-banner-0mxabywo.webp" alt="Lens Font Recognition Model Banner" />
 <p>
 
 <p align="center">
@@ -9,11 +9,11 @@
 
 </p>
 
-[Lens](https://www.mixfont.com/models/lens) is a neural-net based font recognition and classification model. It has been specifically trained on open-source fonts. It recognizes the closest matching open-source font for the largest word in a provided image. Lens supports most [Google Fonts](https://fonts.google.com/) families, but also includes other open source fonts outside of the Google Fonts collection. In total is recognizes over 1000 different font families, and over 5000 font variants, including multiple weights and italic style combinations. This repo contains a standalone release of the Lens model and its local inference code. Enjoy!
+[Lens](https://www.mixfont.com/font-recognition-api) is a neural-net based font recognition and classification model. It has been specifically trained on open-source fonts. It recognizes the closest matching open-source font for the largest word in a provided image. Lens supports most [Google Fonts](https://fonts.google.com/) families, but also includes other open source fonts outside of the Google Fonts collection. In total is recognizes over 1000 different font families, and over 5000 font variants, including multiple weights and italic style combinations. This repo contains a standalone release of the Lens model and its local inference code. Enjoy!
 
 ## News
 
-- 2026.3.16: 🎉🎉🎉 We have released [Lens](https://www.mixfont.com/models/lens) as an open-weight font recognition model!
+- 2026.3.16: 🎉🎉🎉 We have released our font recognition model(https://www.mixfont.com/font-recognition-api) as open-weights!
 
 ## Contents <!-- omit in toc -->
 
